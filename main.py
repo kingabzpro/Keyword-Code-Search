@@ -33,8 +33,11 @@ def main():
             print("Exiting chatbot. Goodbye!")
             break
 
-        # Extract keywords from the question (using first 5 words for simplicity)
-        keywords = question.lower().split()[:5]
+        # Extract keywords from the question and remove stop words
+        stop_words = {'a', 'an', 'the', 'and', 'or', 'but', 'is', 'are', 'was', 'were', 
+                     'in', 'on', 'at', 'to', 'for', 'with', 'by', 'about', 'like', 
+                     'from', 'of', 'as', 'how', 'what', 'when', 'where', 'why', 'who'}
+        keywords = [word for word in question.lower().split() if word not in stop_words][:5]
 
         print("Searching codebase...")
         matches = search_codebase(args.path, keywords, allowed_extensions)
