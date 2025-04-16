@@ -19,9 +19,9 @@ This project provides a lightweight solution for performing keyword-based search
    ```
 
 2. **Install dependencies:**
-
+Please ensure you have the latest version of the OpenAI client.
    ```bash
-   pip install openai
+   pip install -U openai
    ```
 
 ## Environment Setup
