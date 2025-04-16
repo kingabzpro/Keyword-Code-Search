@@ -2,7 +2,7 @@
 
 This project provides a lightweight solution for performing keyword-based searches on your codebase and then uses GPT‑4.1 to generate detailed answers or explanations based on the relevant code snippets. The tool extracts context (two lines before and after each match) and builds a prompt including your question and the corresponding code snippets.
 
-
+![Code Search with GPT-4.1 Demo](images/code_search_1.gif)
 
 ## Requirements
 - Python 3.8+
